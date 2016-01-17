@@ -1,0 +1,75 @@
+<div class="row" ng-controller='editBtnCtr as edit' >
+    <div class="col s12" ng-hide='edit.hide'>
+        <!-- Grey navigation panel -->
+		<h3 class="grey-text">List of requirements</h3>
+		<edit-button class="hide-on-med-and-down"></edit-button>
+		<div class="divider hide-on-large-only"></div>
+		<edit-button class="for-mobile hide-on-large-only" ></edit-button>
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<li >
+				<div class="collapsible-header">
+					<div class="grey-text">Web Developer 
+					</div>
+						<div class="chip">
+							<i class="orange-text material-icons ">person_pin</i>
+							Pinned 12
+						</div>
+						<div class="chip">
+							<i class="green-text material-icons ">add</i>
+							Approved 7 
+						</div>
+						<div class="chip red">
+							<i class=" material-icons ">add_alert</i>
+							New 7 
+						</div>
+					
+				</div>
+				<div class="collapsible-body">
+					<a class="btn-floating white req-options" ng-click="edit.test('Edit')"><i class="material-icons pink-color">mode_edit</i></a>
+						<div class="divider"></div>
+					<p>Some content for requirements....</p>
+				</div>
+			</li>
+			<li >
+				<div class="collapsible-header">
+					<div class="grey-text">Sales</div>
+						<div class="chip">
+							<i class="green-text material-icons ">add</i>
+							Approved 7 
+						</div>
+						<div class="chip red">
+							<i class=" material-icons ">add_alert</i>
+							New 7 
+						</div>
+					
+				</div>
+				<div class="collapsible-body">
+					<a class="btn-floating white req-options" ng-click="edit.test('Edit')"><i class="material-icons pink-color">mode_edit</i></a>
+						<div class="divider"></div>
+					<p>Some content for requirements...</p>
+				</div>
+			</li>
+			<li >
+				<div class="collapsible-header">
+					<div class="grey-text">Sales Executive</div>
+						<div class="chip">
+							<i class="green-text material-icons ">add</i>
+							Approved 7 
+						</div>
+						<div class="chip red">
+							<i class=" material-icons ">add_alert</i>
+							New 7 
+						</div>
+					
+				</div>
+				<div class="collapsible-body">
+				<a class="btn-floating white req-options" ng-click="edit.test('Edit')"><i class="material-icons pink-color">mode_edit</i></a>
+						<div class="divider"></div>
+					<p>Some content for requirements...</p>
+				</div>
+			</li>
+			
+		</ul>
+    </div> 
+	<add-reqiurement ng-show="edit.hide"></add-requirement>
+  </div>

@@ -1,0 +1,212 @@
+ <!DOCTYPE html>
+  <html ng-app="myApp" ng-controller="myCtrl">
+    <head>
+		
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	  <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"/>
+    </head>
+
+    <body >
+	 <!-- Modal Trigger -->
+
+  <!-- Modal Structure -->
+	  <div id="modal1" class="modal modal-fixed-footer">
+			<div class="modal-content">
+				  <h4>View Your Notifications!</h4>
+				<ul  class="collection ">
+					<li class="collection-item avatar">
+					  <i class="material-icons circle">folder</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+					<li class="collection-item avatar">
+					  <i class="material-icons circle green">insert_chart</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+					<li class="collection-item avatar">
+					  <i class="material-icons circle red">play_arrow</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+					<li class="collection-item avatar">
+					  <i class="material-icons circle red">play_arrow</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+					<li class="collection-item avatar">
+					  <i class="material-icons circle red">play_arrow</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+					<li class="collection-item avatar">
+					  <i class="material-icons circle red">play_arrow</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+					<li class="collection-item avatar">
+					  <i class="material-icons circle red">play_arrow</i>
+					  <span class="title">Title</span>
+					  <p>First Line <br>
+						 Second Line
+					  </p>
+					  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+					</li>
+			  </ul>
+			</div>
+			<div class="modal-footer">
+			  <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+			</div>
+	  </div>
+		<div id="modal2" class="modal bottom-sheet">
+			<div class="modal-content">
+			  <h4>Contact Us</h4>
+				<div class="row">
+					<form class="col s12">
+					  <div class="row">
+						<div class="input-field col s12">
+						  <textarea id="textarea1" class="materialize-textarea"></textarea>
+						  <label for="textarea1">Your text here</label>
+						</div>
+					  </div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+			  <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+			   <button  onClick=" Materialize.toast('You request has been sent! We will contact you as soon it is possible!',5000,'rounded') "class="btn waves-effect waves-light" type="submit" name="action">Submit
+					<i class="material-icons right">send</i>
+				</button>
+			</div>
+		</div>
+		<div id="modalSearch" class="modal ">
+			<div class="modal-content">
+			  <h5>Extended Search</h5>
+				<div class="row">
+					<form class="col s12">
+					  <div class="row">
+						Extended fields search will be hear
+					  </div>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+			</div>
+		</div>
+         <!-- end of modals--> 
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper white">
+			  <a href="#" ng-click="vie='views/index.html';" class="brand-logo pink-color" style="padding-left:10px;">Phirsenaukari</a>
+			  <a href="#" data-activates="mobile-demo" class="button-collapse pink-color"><i class="material-icons">menu</i></a>
+			  <!-- if there is notification-->
+			  <a class="btn-floating btn-large waves-effect waves-light red right modal-trigger" href="#modal1" ><i class="material-icons" >add_alert</i></a>
+			  <ul class="right hide-on-med-and-down">
+				<li><a href="#" ng-click="vie='views/candidates.html'" ng-class="{active:vie=='views/candidates.html'}"  class="green-color">My Candidates</a></li>
+				<li><a href="#" ng-click="vie='views/req.html'" ng-class="{active:vie=='views/req.html'}" class="green-color">My Requirements</a></li>
+				<li><a href="#" ng-click="vie='views/settings.html'" ng-class="{active:vie=='views/settings.html'}" class="green-color">My Settings</a></li>
+			  </ul>
+			  
+			  <ul class="side-nav" id="mobile-demo">
+				<li><a href="#" ng-click="vie='views/candidates.html'" ng-class="{active:vie=='views/candidates.html'}" class="green-color">My Candidates</a></li>
+				<li><a href="#" ng-click="vie='views/req.html'" ng-class="{active:vie=='views/req.html'}" class="green-color">My Requirements</a></li>
+				<li ><a href="#" ng-click="vie='views/settings.html'" ng-class="{active:vie=='views/settings.html'}" class="green-color ">My Settings</a></li>
+			  </ul>
+			</div>
+		</nav>
+	</div>
+	<div class="container center-align">
+	
+		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+				<a class="waves-effect waves-light btn-large modal-trigger" href="#modal2"><i class="material-icons right">ring_volume</i>Contact Us</a>
+		</div>
+		<div ng-include="vie" onload="load(vie)">
+		</div>
+	</div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script type="text/javascript" src="js/myscript.js"></script>
+	  <script src="js/angular.min.js"></script>
+	  <script>
+	  </script>
+	  <script>
+	  (function(){
+		var app=angular.module('myApp',[]);
+		app.controller('myCtrl',function($scope){
+			$scope.vie='views/index.html';
+			$scope.t=0;
+			$scope.load=function(vie){
+				$scope.t++;
+				/*js loaded view*/
+				$('.tooltipped').tooltip({delay: 50});
+				$('.modal-trigger1').leanModal({
+					dismissible: true, 
+					opacity: .5, 
+					in_duration: 300, 
+					out_duration: 200, 
+					ready: function() {  }, 
+					complete: function() {  } 
+					}
+				);
+				$('.collapsible').collapsible({
+					accordion : true // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+				});
+			};
+			$scope.test=function(){
+				console.log('test');
+			};
+			
+		});
+		app.directive('editButton',function(){
+			return{
+				restrict:'E',
+				templateUrl:'views/edit_button.html'
+			};
+		});
+		app.directive('addReqiurement',function(){
+			return{
+				restrict:'E',
+				templateUrl:'views/add_requirement.html'
+			};
+		});
+		app.controller('editBtnCtr',function(){
+			this.hide=false;
+			this.option='Add';
+			this.test=function(option){
+				this.option=option;
+				this.hide=true;	
+			};
+			this.testBack=function(){
+				this.hide=false;
+			}
+		});
+	})();
+	  </script>
+    </body>
+  </html>

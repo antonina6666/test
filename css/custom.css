@@ -1,0 +1,104 @@
+html
+{
+	font-family: ProximaNova,Roboto,sans-serif;
+}
+/*Colors*/
+.pink-color
+{
+	    color: #eb008b!important;
+}
+.green-color
+{
+	color:#12c5a2;
+}
+.orange-color
+{
+	color:#f15e0c;
+}
+.grey-color
+{
+	color:#7f7f7f;
+}
+.my-green
+{
+	background-color:#12c5a2;
+}
+/*--------------*/
+.logincard
+{
+	margin-top:80px;
+}
+.nav-alert
+{
+	padding-right: 50px;
+    padding-left: 50px;
+}
+.tags
+{
+	margin-top:10px;
+}
+.buttons-block
+{
+	position: absolute;
+    top: 45%;
+    right: -10%;
+}
+
+.card-place
+{
+	position: relative;
+}
+
+.addCand
+{
+	/*position: relative;
+    bottom: 75px;
+    right: 2%;*/
+	position: relative;
+    bottom: 75px;
+    right: -33%;
+}
+.removeCand
+{
+	/*position: relative;
+    bottom: 10px;
+    left: 50%;*/
+	position: relative;
+    bottom: 10px;
+    left: 66%;
+}
+.pinCand
+{
+	bottom: 140px;
+    position: relative;
+    right: 2%;
+}
+.hide-on-large-only button.mb{
+	margin-right:10px;
+}
+
+nav li a.active, nav li a:hover
+{
+	background-color: transparent!important;
+    border-bottom: 4px solid #12c5a2;
+    margin-top: -3px;
+}
+
+.chip.red
+{
+	color:white;
+}
+edit-button.for-mobile .fixed-action-btn
+{
+	position:relative!important;
+	margin-top: 30px!important;
+}
+.fixed-action-btn.no-overflow
+{
+	z-index:0;
+}
+.collapsible-body .req-options
+{
+	margin-top:10px;
+	margin-bottom:10px;
+}
